@@ -4,6 +4,15 @@ This is a simple **Spring MVC** web application that serves as a basic webpage w
 
 ---
 
+## **📌Spring MVC Web Page Architecture**
+```sh
++------------+     +----------------------+     +------------------+     +-----------------+     +------------+     +----------+
+|  Client    | --> |  Front Controller    | --> |  Handler Mapping | --> |   Controller    | --> | View       | --> | Response |
+| (Browser)  |     | (DispatcherServlet)  |     | (Maps URL)       |     | (Processes Req.)|     | (JSP Page) |     | (Sent to |
+|            |     |                      |     |                  |     | (Returns Model)|     | (Renders)  |     |  Client) |
++------------+     +----------------------+     +------------------+     +-----------------+     +------------+     +----------+
+```
+
 ## 📌 Spring MVC  
 
 ### **Spring MVC Workflow**  
@@ -25,18 +34,18 @@ SpringWebMvc1SP
 │── src/
 │   ├── main/
 │   │   ├── java/in/sp/main/
-│   │   │   ├── MyController.java
+│   │   │   ├── MyController.java  <-- (Handles requests)
 │   │   ├── resources/
 │   │   ├── webapp/
 │   │   │   ├── WEB-INF/views/
-│   │   │   │   ├── aboutUs.jsp
+│   │   │   │   ├── aboutUs.jsp     <-- (UI Pages)
 │   │   │   │   ├── contactUs.jsp
 │   │   │   │   ├── hello.jsp
-│   │   │   ├── index.jsp
-│   │   │   ├── myds-servlet.xml
-│   │   │   ├── web.xml
-│── pom.xml
-│── target/
+│   │   │   ├── index.jsp           <-- (Home Page)
+│   │   │   ├── myds-servlet.xml    <-- (Spring Config)
+│   │   │   ├── web.xml             <-- (Servlet Config)
+│── pom.xml                          <-- (Maven Dependencies)
+│── target/                          <-- (Compiled Output)
 ```
 
 ---
@@ -60,28 +69,17 @@ SpringWebMvc1SP
 
 ---
 
-## 🔧 **Configuration (web.xml & myds-servlet.xml)**  
+## 📌 **Configuration & Flow**
 
-### `web.xml`
-```xml
-<servlet>
-    <servlet-name>dispatcher</servlet-name>
-    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
-    <load-on-startup>1</load-on-startup>
-</servlet>
-<servlet-mapping>
-    <servlet-name>dispatcher</servlet-name>
-    <url-pattern>/</url-pattern>
-</servlet-mapping>
-```
+1️⃣ Client (Browser/User) sends a request.
+2️⃣ DispatcherServlet (Front Controller) handles the request.
+3️⃣ Handler Mapping routes the request to the correct Controller.
+4️⃣ Controller processes the request and returns a Model & View.
+5️⃣ View Resolver maps the logical view to an actual JSP page.
+6️⃣ JSP (View Layer) renders the response.
+7️⃣ Response is sent back to the client.
 
-### `myds-servlet.xml`
-```xml
-<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-    <property name="prefix" value="/WEB-INF/views/" />
-    <property name="suffix" value=".jsp" />
-</bean>
-```
+---
 
 ### 🎯 *Happy Coding! 🚀*
 
