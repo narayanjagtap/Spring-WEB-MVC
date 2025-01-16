@@ -4,6 +4,22 @@ This is a simple **Spring MVC** web application that serves as a basic webpage w
 
 ---
 
+## 📌 Spring MVC Flow Diagram  
+
+![Spring MVC Flow](image.png)  
+
+### **Spring MVC Workflow**  
+
+1️⃣ **Client (User)** sends a request.  
+2️⃣ **Front Controller (DispatcherServlet)** receives and forwards the request.  
+3️⃣ **Handler Mapping** determines the controller handling the request.  
+4️⃣ **Controller** processes the request and returns a Model & View object.  
+5️⃣ **View Resolver** maps the logical view name to the actual JSP file.  
+6️⃣ **View (JSP Page)** renders the UI.  
+7️⃣ **Response** is sent back to the client.  
+
+---
+
 ## 📁 Project Structure  
 
 ```sh
