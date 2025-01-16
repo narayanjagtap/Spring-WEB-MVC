@@ -37,37 +37,6 @@ SpringWebMvc1SP
 
 ---
 
-## 🚀 **How to Run the Project**  
-
-### 1️⃣ Clone the Repository  
-```sh
-git clone https://github.com/your-username/SpringWebMvc1SP.git
-cd SpringWebMvc1SP
-```
-
-### 2️⃣ Configure Dependencies  
-Ensure **Maven** is installed, then run:  
-```sh
-mvn clean install
-```
-
-### 3️⃣ Deploy on Apache Tomcat  
-- Place the project in the **Tomcat webapps folder** or use an **IDE (Eclipse/IntelliJ)** to deploy.  
-- Start the Tomcat server.  
-
-### 4️⃣ Access the Web Pages  
-Open the browser and go to:  
-```
-http://localhost:8080/SpringWebMvc1SP/
-```
-Available Pages:  
-- **Home Page:** `/`  
-- **Hello Page:** `/helloPage`  
-- **About Us:** `/about-Us`  
-- **Contact Us:** `/contact-Us`  
-
----
-
 ## 🏗 **Project Features**  
 ✅ Simple MVC structure  
 ✅ Organized JSP pages in `WEB-INF/views/`  
@@ -100,18 +69,6 @@ Available Pages:
 </bean>
 ```
 
----
-
-## 📜 **License**  
-This project is open-source and available under the **MIT License**.  
-
----
-
-## 🤝 **Contributing**  
-Contributions, issues, and feature requests are welcome! Feel free to submit a **pull request** or report an issue.  
-
----
-
 ## 📬 **Contact**  
 For any queries, reach out via:  
 📧 Email: your-email@example.com  
@@ -123,16 +80,3 @@ For any queries, reach out via:
 ### 🎯 *Happy Coding! 🚀*
 ```
 
----
-
-### **What’s Included?**  
-✅ **Project Overview**  
-✅ **Folder Structure**  
-✅ **Setup & Running Instructions**  
-✅ **Technology Stack**  
-✅ **Feature List**  
-✅ **Configuration (web.xml & servlet.xml)**  
-✅ **License & Contribution Info**  
-✅ **Contact Links**  
-
-Let me know if you want **any modifications or additions**! 🚀😊
