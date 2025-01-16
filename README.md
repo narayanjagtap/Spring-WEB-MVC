@@ -4,9 +4,7 @@ This is a simple **Spring MVC** web application that serves as a basic webpage w
 
 ---
 
-## 📌 Spring MVC Flow Diagram  
-
-![Spring MVC Flow](image.png)  
+## 📌 Spring MVC  
 
 ### **Spring MVC Workflow**  
 
