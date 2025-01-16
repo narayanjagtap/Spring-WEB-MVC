@@ -69,14 +69,5 @@ SpringWebMvc1SP
 </bean>
 ```
 
-## 📬 **Contact**  
-For any queries, reach out via:  
-📧 Email: your-email@example.com  
-🔗 LinkedIn: [Your Profile](https://linkedin.com/in/your-profile)  
-💻 GitHub: [Your GitHub](https://github.com/your-username)  
-
----
-
 ### 🎯 *Happy Coding! 🚀*
-```
 
