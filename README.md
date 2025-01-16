@@ -1,4 +1,3 @@
-```md
 # Spring MVC Web Page 🌐  
 
 This is a simple **Spring MVC** web application that serves as a basic webpage with multiple sections, including **Home, Hello Page, About Us, and Contact Us**. The project is built using **Spring MVC, JSP, and Apache Tomcat** for deployment.  
@@ -7,7 +6,7 @@ This is a simple **Spring MVC** web application that serves as a basic webpage w
 
 ## 📁 Project Structure  
 
-```
+```sh
 SpringWebMvc1SP
 │── src/
 │   ├── main/
